@@ -435,9 +435,17 @@
   <section class="shop">
     <h2 class="shop-header">наши изделия</h2>
     <div class="shop-gallery">
-
+      
       <article class="shop-card-item">
-        <img src="images/shop-item-desk1.jpg" alt="подушки" class="shop-img">
+        <picture class="shop-img">
+          <source srcset="images/shop-item-desk1.jpg" media="(min-width: 1201px)">
+          <source srcset="images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-mobile1.jpg" media="max-width: 600px">
+          <img class="shop-img__img" src="images/shop-item-desk1.jpg"
+          srcset="images/shop-item-desk1.jpg 1x"
+          alt="подушки">
+        </picture>
+        <!--<img src="images/shop-item-desk1.jpg" alt="подушки" class="shop-img">-->
         <div class="shop-card-item-container">
           <h2 class="shop-card-name">подушки на диван</h2>
           <p class="shop-card-text">Набор издвух подушек с модными принтами. Видео о создании <a href="" class="shop-card-link">здесь</a>.</p>
@@ -446,13 +454,21 @@
               <p class="old-price">1000₽</p>
               <p class="new-price">800₽<span class="line-through"></span></p>
             </div>
-            <button class="in-shop">В магазин</button>
+            <a href class="in-shop">В магазин</a>
           </div>
         </div>
       </article>
 
       <article class="shop-card-item">
-        <img src="images/shop-item-desk2.jpg" alt="подушки" class="shop-img">
+        <picture class="shop-img">
+          <source srcset="images/shop-item-desk2.jpg" media="(min-width: 1201px)">
+          <source srcset="images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-mobile2.jpg" media="max-width: 600px">
+          <img class="shop-img__img" src="images/shop-item-desk2.jpg"
+          srcset="images/shop-item-desk2.jpg 1x"
+          alt="Кукла «Зайчик»">
+        </picture>
+        <!--<img src="images/shop-item-desk2.jpg" alt="Кукла «Зайчик»" class="shop-img">-->
         <div class="shop-card-item-container">
           <h2 class="shop-card-name">Кукла «Зайчик»</h2>
           <p class="shop-card-text">Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена<a href="" class="shop-card-link">весенняя серия постов</a>в блоге и несколько подкастов.</p>
@@ -460,13 +476,21 @@
             <div class="price">
               <p class="new-price">3500₽<span class="line-through"></span></p>
             </div>
-            <button class="in-shop">В магазин</button>
+            <a href class="in-shop">В магазин</a>
           </div>
         </div>
       </article>
 
       <article class="shop-card-item">
-        <img src="images/shop-item-desk3.jpg" alt="подушки" class="shop-img">
+        <picture class="shop-img">
+          <source srcset="images/shop-item-desk3.jpg" media="(min-width: 1201px)">
+          <source srcset="images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1200px)">
+          <source srcset="images/shop-item-mobile3.jpg" media="max-width: 600px">
+          <img class="shop-img__img" src="images/shop-item-desk3.jpg"
+          srcset="images/shop-item-desk3.jpg 1x"
+          alt="Кукла «Зайчик»">
+        </picture>
+        <!--<img src="images/shop-item-desk3.jpg" alt="подушки" class="shop-img">-->
         <div class="shop-card-item-container">
           <h2 class="shop-card-name">Шестиугольная рамка</h2>
           <p class="shop-card-text">Необычная рамка для украшения дома из видео <a href="" class="shop-card-link">«Как сделать рамку из подручных средств за 30 минут» </a></p>
@@ -475,13 +499,11 @@
               <p class="old-price">500₽</p>
               <p class="new-price">400₽<span class="line-through"></span></p>
             </div>
-            <button class="in-shop">В магазин</button>
+            <a href class="in-shop">В магазин</a>
           </div>
         </div>
       </article>
-
     </div>
-
   </section>
 
   <footer class="footer">
